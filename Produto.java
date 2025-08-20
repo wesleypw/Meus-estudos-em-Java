@@ -1,7 +1,7 @@
 public class Produto{
     private String nomeProduto;
     private int codigoDeBarra;
-    private int valoUnitario;
+    private int valorUnitario;
     private String marca;
     private int quantidade;
 
@@ -20,11 +20,11 @@ public class Produto{
     public int getCodigoDeBarra(){
         return codigoDeBarra;
     } 
-    public void setValoUnitario(int valoUnitario){
-        this.valoUnitario= valoUnitario;
+    public void setValorUnitario(int valorUnitario){
+        this.valorUnitario= valorUnitario;
     } 
-    public int getValoUnitario(){
-        return valoUnitario;
+    public int getValorUnitario(){
+        return valorUnitario;
     } 
     public void setMarca(String marca){
         this.marca = marca;
