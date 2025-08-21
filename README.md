@@ -1,1 +1,1 @@
-um sistema simples de estoque de um hospital vaterinario 
+esse repositorio esta servindo somente para revisão de java 
