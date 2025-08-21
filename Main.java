@@ -4,6 +4,26 @@ public class Main{
         Venda v = new Venda();
         Fornecedor f = new Fornecedor();
         Estoque e = new Estoque();
+
+        AlimentoPerecivel ap = new AlimentoPerecivel();
+        AlimentosNaoPerecivel anp = new AlimentosNaoPerecivel();
+
+        ap.setTemperatura("20");
+        ap.setPrazoAbertura("10");
+        anp.setInstrucaoConservacao("10");
+        anp.setConservante("10");
+        anp.setIngredientes("10");
+        anp.setMarca("10");
+        anp.setNomeProduto("10");
+        anp.setCategoria("10");
+        anp.setEmbalagem("10");
+        anp.setFabricante("10");
+        anp.setArmazenamento("10");
+
+
+       
+
+
         v.setNumeroDaNotaFiscal(100);
         v.setDataVenda("10/10/2023");
         v.setHoraVenda("10:10:10");
@@ -42,7 +62,12 @@ public class Main{
         System.out.println("numero da nota fiscal é " + v.getNumeroDaNotaFiscal());
         System.out.println("data da venda é " + v.getDataVenda());
         System.out.println("hora da venda é " + v.getHoraVenda());
-        System.out.println("valor total é " + v.getValorTotal());
+
+        System.out.println("temperatura é " + ap.getTemperatura());
+        System.out.println("prazo de abertura é " + ap.getPrazoAbertura());
+        System.out.println("instrucao de conservacao é " + anp.getInstrucaoConservacao());
+        System.out.println("conservante é " + anp.getConservante());
+
 
     }
 }
