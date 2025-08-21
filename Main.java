@@ -20,6 +20,17 @@ public class Main{
         anp.setFabricante("10");
         anp.setArmazenamento("10");
 
+        LixoSeco ls = new LixoSeco();
+        ls.setMaterial("10");
+        ls.setColeta("10");
+        ls.setCoperativa("10");
+
+
+        LixoOrganico lo = new LixoOrganico();
+        lo.setTempoDecomposicao("10");
+        lo.setAterro("10");
+        lo.setCompostagem("10");
+
 
        
 
@@ -67,6 +78,13 @@ public class Main{
         System.out.println("prazo de abertura é " + ap.getPrazoAbertura());
         System.out.println("instrucao de conservacao é " + anp.getInstrucaoConservacao());
         System.out.println("conservante é " + anp.getConservante());
+        
+        System.out.println("material é " + ls.getMaterial());
+        System.out.println("coleta é " + ls.getColeta());
+        System.out.println("coperativa é " + ls.getCoperativa());
+        System.out.println("tempo de decomposicao é " + lo.getTempoDecomposicao());
+        System.out.println("aterro é " + lo.getAterro());
+        System.out.println("compostagem é " + lo.getCompostagem());
 
 
     }
