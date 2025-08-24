@@ -4,6 +4,10 @@ public class Main{
         Venda v = new Venda();
         Fornecedor f = new Fornecedor();
         Estoque e = new Estoque();
+        Cliente c = new Cliente();
+        Servico s = new Servico();
+        Itens i = new Itens();
+        Animal a = new Animal();
 
         AlimentoPerecivel ap = new AlimentoPerecivel();
         AlimentosNaoPerecivel anp = new AlimentosNaoPerecivel();
@@ -24,16 +28,45 @@ public class Main{
         ls.setMaterial("10");
         ls.setColeta("10");
         ls.setCoperativa("10");
-
+        ls.setTipo("Reciclável");
+        ls.setQuantidade(5);
+        ls.setValor(10.50f);
 
         LixoOrganico lo = new LixoOrganico();
         lo.setTempoDecomposicao("10");
         lo.setAterro("10");
         lo.setCompostagem("10");
+        lo.setTipo("Orgânico");
+        lo.setQuantidade(3);
+        lo.setValor(5.75f);
 
+        c.setNome("João Silva");
+        c.setTelefoneCliente(999999999);
+        c.setEndereco("Rua Principal, 123");
+        c.setEmail("joao@email.com");
+        c.setCpf("123.456.789-00");
+        c.setRg("12.345.678-9");
+        c.setDataCadastro("01/01/2023");
+        c.setGenero("Masculino");
 
-       
+        a.setRaca("Labrador");
+        a.setIdentificador(12345);
+        a.setEspecie("Cachorro");
+        a.setSexo("Macho");
+        a.setComplementos("Vacinado");
 
+        i.setNomeItem("Produto Teste");
+        i.setQuantidade(2);
+        i.setValorUnitario(25.50f);
+        i.calcularValorTotal();
+        i.setCodigo("PROD001");
+        i.setDescricao("Produto de teste para demonstração");
+
+        s.setNomeServico("Banho e Tosa");
+        s.setCodigoServico(1001);
+        s.setValorServico(50.00f);
+        s.setDescricaoServico("Serviço completo de banho e tosa");
+        s.setDataCadastroServico("15/05/2023");
 
         v.setNumeroDaNotaFiscal(100);
         v.setDataVenda("10/10/2023");
@@ -47,12 +80,15 @@ public class Main{
         f.setNomeFantasia("12345678901234");
         f.setNumero(1234567890);
         f.setEstado("12345678901234");
+        f.setCep(12345678);
+        f.setTelefone(1234567890);
+        f.setEmail("empresa@email.com");
+        f.setStatus("Ativo");
 
         e.setQuantidadeTotal(100);
         e.setLocalizacao("12345678901234");
         e.setDataVencimento("10/10/2023");
         e.setCategoria("12345678901234");
-
 
         p.setNomeProduto("sabonete");
         p.setCodigoDeBarra(90);
