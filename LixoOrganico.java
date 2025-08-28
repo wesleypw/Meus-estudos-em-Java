@@ -1,4 +1,4 @@
-public class LixoOrganico {
+public class LixoOrganico extends Lixo {
     private String tempoDecomposicao;
     private String aterro;
     private String compostagem;
